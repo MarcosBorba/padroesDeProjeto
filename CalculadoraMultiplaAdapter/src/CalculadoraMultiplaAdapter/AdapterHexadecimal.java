@@ -9,8 +9,9 @@ package CalculadoraMultiplaAdapter;
  *
  * @author marcos
  */
-public interface AdapterFactory {
-    
-    public String converteResultado(String resultado);
+public abstract class AdapterHexadecimal implements Conversor{
+
+    @Override
+    public abstract String converteResultado(String resultado);
     
 }

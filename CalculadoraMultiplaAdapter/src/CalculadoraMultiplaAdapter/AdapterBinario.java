@@ -9,10 +9,9 @@ package CalculadoraMultiplaAdapter;
  *
  * @author marcos
  */
-public class ResultadoHexadecimal extends AdapterHexadecimal{
+public abstract class AdapterBinario implements Conversor{
 
     @Override
-    public String converteResultado(String resultado) {
-        return Double.toHexString(Double.valueOf(resultado));
-    }
+    public abstract String converteResultado(String resultado);
+     
 }

@@ -9,11 +9,11 @@ package CalculadoraMultiplaAdapter;
  *
  * @author marcos
  */
-public class ResultadoBinario implements AdapterFactory{
+public class ResultadoBinario extends AdapterBinario{
 
     @Override
-    public String converteResultado(String resultado) {  
-        return Long.toBinaryString(Double.doubleToRawLongBits(Double.valueOf(resultado)));
+    public String converteResultado(String resultado) {
+        return Integer.toBinaryString(Double.valueOf(Double.valueOf(resultado)).intValue());
     }
     //String.valueOf(Double.doubleToLongBits(Double.valueOf(resultado)));
 }

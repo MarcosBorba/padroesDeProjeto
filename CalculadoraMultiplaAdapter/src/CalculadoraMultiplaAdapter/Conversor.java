@@ -9,10 +9,8 @@ package CalculadoraMultiplaAdapter;
  *
  * @author marcos
  */
-public class ResultadoHexadecimal extends AdapterHexadecimal{
-
-    @Override
-    public String converteResultado(String resultado) {
-        return Double.toHexString(Double.valueOf(resultado));
-    }
+public interface Conversor {
+    
+    public String converteResultado(String resultado);
+    
 }

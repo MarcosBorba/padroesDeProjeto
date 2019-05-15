@@ -9,7 +9,7 @@ package CalculadoraMultiplaAdapter;
  *
  * @author marcos
  */
-public class ResultadoOctal implements AdapterFactory{
+public class ResultadoOctal extends AdapterOctal{
 
     @Override
     public String converteResultado(String resultado) {  

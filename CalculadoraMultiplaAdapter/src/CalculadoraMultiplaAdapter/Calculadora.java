@@ -33,7 +33,7 @@ public class Calculadora implements Initializable {
     private String total;
     private boolean igualRecente = false;
     private boolean pontoRecente = false;
-    private AdapterFactory adapterMaster;
+    private Conversor adapterMaster;
     @FXML
     private Label msg3;
 
